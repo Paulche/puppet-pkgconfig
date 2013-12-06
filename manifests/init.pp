@@ -14,7 +14,7 @@ class pkgconfig {
       require => Package['gettext'];
   }
 
-  if versioncmp($macosx_productversion, '10.8.5') == 0
+  if versioncmp($macosx_productversion, '10.8.0') > 0
   {
     include missing_libs
   }
